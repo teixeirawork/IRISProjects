@@ -1,14 +1,14 @@
 /// CLASSE DE RESPOSTA PARA O SERVIÇO VIA CEP
 
-Class ViaCep.App.Msg.CEPResponse Extends Ens.Response
+Class App.Msg.CEPResponse Extends Ens.Response
 {
 
     /// DADOS DO ENDEREÇO CONSULTADO
     Property Logradouro As %String;
     Property Bairro As %String;
     Property Localidade As %String;
-    Property Cidade As %String;
     Property UF As %String(MAXLEN=2);
+    Property Complemento As %String;
 
     /*STATUS DA CONSULTA
         200: Sucesso; 
