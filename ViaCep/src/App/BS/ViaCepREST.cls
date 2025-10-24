@@ -10,10 +10,10 @@ Class App.BS.ViaCepREST Extends %CSP.REST
 
     // Configura o mapeamento da URL para o metodo BuscaCep
 
-    XData UrlMap [XMLNamespace = "http://www.intersystems.com/urlmap"]
+    XData UrlMap [ XMLNamespace = "http://www.intersystems.com/urlmap" ]
     {
         <Routes>
-            <Route Url="/BuscaCep/:cep" Method="GET" Call="BuscaCep"/> // Define a rota REST para consulta de CEP
+            <Route Url="/BuscaCEP/:cep" Method="GET" Call="BuscaCEP" />
         </Routes>
     }
 
