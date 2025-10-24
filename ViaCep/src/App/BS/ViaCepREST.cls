@@ -3,7 +3,7 @@
     EXTENDE %CSP.REST para lidar com requisições HTTP RESTful.
     A classe processa requisições de consulta de CEP, chama o serviço ViaCep e retorna os dados formatados.
 */
-Class ViaCep.App.BS.ViaCepREST Extends %CSP.REST
+Class App.BS.ViaCepREST Extends %CSP.REST
 {
     
     Parameter UseSession = 0; // Desabilita o uso de sessão  0 = desabilitado, 1 = habilitado
