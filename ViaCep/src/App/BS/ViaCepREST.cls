@@ -26,7 +26,7 @@ Class App.BS.ViaCepREST Extends %CSP.REST
 
        // Cria metodo de requisição
 
-       Set tRequest = ##Class(App.Msg.App.Msg.CEPRequest).%New()
+       Set tRequest = ##Class(App.Msg.CEPRequest).%New()
        Set tRequest.CEP = pCEP
 
        // Chama o BO para o processamento de Lógica
