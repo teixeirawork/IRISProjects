@@ -52,7 +52,7 @@ Class App.BO.ViaCepBO Extends Ens.BusinessOperation
             }
         } Else {
             // Loga o erro de comunicação no Production Monitor (Boa pratica)
-            $$$logError("Falha na chamada HTTP para ViaCEP. Status: " _ httpRequest.HttpResponse.StatusCode)
+            DO $system.OBJ.LogMessage("Falha HTTP ViaCEP. Status: " _ httpRequest.HttpResponse.StatusCode, "ERROR", "API-VIACEP")
             Set pResponse.Status = 500
             Set pResponse.Mensagem = "Erro interno do servidor ou falha ao consultar o ViaCEP."
 
